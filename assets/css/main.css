@@ -5,6 +5,7 @@
     
     font-family:"Chivo Mono", serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 
 }
 
@@ -82,6 +83,44 @@ nav ul li a:hover::after {
 
 .header-text h2 {
     font-size: 15px;
-    margin-left: 600px;
-    margin-top: 350px;
+    margin-left: 35%;
+    margin-top: 380px;
+}
+
+.header-text a{
+    width:50%;
+}
+
+.aboutme {
+    margin-top: 1%;
+    background-color: white;
+    transition: 2s ease;
+}
+
+.aboutme::after {
+    transition: 0.5s ease;
+}
+
+.aboutme h2{
+    color: black;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.aboutme p{
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.aboutme img {
+    margin-top: 5%;
+    margin-left: 42.5%;
+    height: 15%;
+    width: 15%;   
 }

@@ -10,8 +10,8 @@
 }
 
 @keyframes fade-inNout {
-    0%{opacity: 0; margin-left: 13%;};
-    100%{opacity: 1; margin-left: 15%;};
+    0%{opacity: 0; margin-left: 5%;};
+    100%{opacity: 1; margin-left: 8%;};
 }
 
 body {
@@ -70,29 +70,19 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
-.header-text {
+.header-text{
     animation: fade-inNout 1.5s;
     color: whitesmoke;
-    margin-left: 15%;
-    margin-top: 13%;
+    margin-left: 8%;
+    margin-top: 5%;
     font-size: 20px;
 }
 
 .header-text h1 {
     font-size: 40px;
-    margin-top: 20px;
+    margin-top: 15%;
 }
 
 .header-text h1 span {
     color:#a816ab;
-}
-
-.header-text h2 {
-    font-size: 15px;
-    margin-left: 35%;
-    margin-top: 380px;
-}
-
-.header-text a{
-    width:100%;
 }

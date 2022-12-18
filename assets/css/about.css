@@ -104,4 +104,5 @@ nav ul li a:hover::after {
     margin-left: 55%;
     margin-top: -25%;
     animation: fade-image 1.5s;
+    /*trying to fix github push error */
 }

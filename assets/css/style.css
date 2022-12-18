@@ -19,6 +19,11 @@
     100%{opacity: 1; margin-left: 55%;};
 }
 
+@keyframes fade-logos-row {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
 body {
     background-color: rgb(112, 13, 104);
 }
@@ -29,6 +34,7 @@ body {
     height: 100vh;
 }
 
+/* ----------------------Taskbar-------------------- */
 nav {
     position: sticky;
     top: 0;
@@ -45,6 +51,12 @@ nav {
 .logo{
     width: 100px;
     margin: 10px 15px;
+    filter: brightness(0.6);
+    transition: 200ms ease;
+}
+
+.logo:hover {
+    filter: brightness(1);
 }
 
 nav ul li {
@@ -53,11 +65,17 @@ nav ul li {
     margin: 10px 45px;
 }
 
+.nav-link:hover {
+    filter: brightness(1);
+}
+
 nav ul li a {
     text-decoration: none;
     color: whitesmoke;
     font-size: 18px;
     position:relative;
+    filter: brightness(0.6);
+    transition: 200ms ease;
 }
 
 nav ul li a::after{
@@ -75,7 +93,9 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
-.header-text1 {
+/* ----------------------Main-------------------- */
+
+.main-header-text {
     animation: fade-inNout 1.5s;
     color: whitesmoke;
     margin-left: 15%;
@@ -83,52 +103,96 @@ nav ul li a:hover::after {
     font-size: 20px;
 }
 
-.header-text1 h1 {
+.main-header-text h1 {
     font-size: 40px;
     margin-top: 20px;
 }
 
-.header-text1 h1 span {
+.main-header-text h1 span {
     color:#a816ab;
 }
 
-.header-text1 h2 {
+.main-header-text h2 {
     font-size: 15px;
     margin-left: 35%;
     margin-top: 380px;
 }
 
-.header-text1 a{
+.main-header-text a{
     width:100%;
 }
 
-.header-text2 {
+/* ----------------------About-------------------- */
+
+.about-header-text {
     color: whitesmoke;
     margin-left: 8%;
     margin-top: 5%;
     font-size: 20px;
 }
 
-.header-text2 h1 {
+.about-header-text h1 {
     font-size: 40px;
     margin-top: 15%;
     animation: fade-inNout 1.5s;
 }
 
-.header-text2 h1 span {
+.about-header-text h1 span {
     color:#a816ab;
 }
 
-.header-text2 p {
+.about-header-text p {
     width: 30%;
     animation: fade-inNout 1.5s;
     color: whitesmoke;
 }
 
-.face-img1 {
+#abt-logo-img {
     position:static;
     width:30%;
     margin-left: 55%;
     margin-top: -25%;
     animation: fade-image 1.5s;
+}
+
+/* ----------------------Skills-------------------- */
+.skills-row-1 img{
+    width:200px;
+    background-color:white;
+    padding: 0.5%;
+    box-shadow: 3px 3px 10px black;
+    filter: brightness(0.7);
+    transition: 200ms ease;
+    animation: fade-logos-row 1.5s;
+}
+
+.skills-row-2 img{
+    width:200px;
+    background-color:white;
+    padding: 0.5%;
+    box-shadow: 3px 3px 10px black;
+    filter: brightness(0.7);
+    transition: 200ms ease;
+    animation: fade-logos-row 1.5s;
+}
+
+.skill-row1:hover {
+    filter: brightness(1);
+}
+
+.skill-row2:hover {
+    filter: brightness(1);
+}
+
+#java-logo-img {
+    margin-top: 5%;
+    margin-left: 52%;
+    height: 218px;
+}
+#R-logo-img {
+    margin-top: 2%;
+    margin-left: 54%;
+    height: 200px;
+    width: 240px;
+
 }

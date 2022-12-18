@@ -46,14 +46,40 @@
             </nav>
 
             <div class="main-header-text">
-                <p>Software Engineer</p>
-                <p>Data Scientist</p>
-                <p>Comic Book Enthusiast</p>
+                <p><span class="auto-type1"></span></p>
+                <p><span class="auto-type2"></span></p>
+                <p><span class="auto-type3"></span></p>
 
-                <h1>I'm <span>Sandilya</span>, let's <span>B</span>uild
-                     something!</h1>
+                <h1>I'm <span class="colored">Sandilya</span>, 
+                    let's <span class="colored">B</span>uild something!</h1>
 
             </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+            <script>
+                var typed = new Typed(".auto-type1", {
+                    strings: ["Software Engineer"],
+                    typeSpeed: 60,
+                    showCursor: false,
+                    loop: false,
+
+                });
+                typed = new Typed(".auto-type2", {
+                    strings: ["Data Scientist"],
+                    typeSpeed: 60,
+                    showCursor: false,
+                    loop: false,
+
+                });
+                typed = new Typed(".auto-type3", {
+                    strings: ["Comic Book Enthusiast"],
+                    typeSpeed: 60,
+                    showCursor: false,
+                    loop: false,
+
+                });
+            </script>
         </div>
     </div>
 </body>

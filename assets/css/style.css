@@ -232,4 +232,54 @@ nav ul li a:hover::after {
 
 }
 
-/* ----------------------Current-------------------- */
+/* ----------------------Contact-------------------- */
+#contact-title {
+    color: #a816ab;
+    font-size:35px;
+    position:fixed;
+    margin-top: 5%;
+    margin-left: 45%;
+    text-shadow: 2px 2px black;
+}
+
+#git-img {
+    width: 10%;
+    position: fixed;
+    margin-top: 12.5%;
+    margin-left: 25%;
+    filter: brightness(0.7);
+    transition: 200ms ease;
+    animation: fade-logos-row 1.5s;
+}
+
+#git-img:hover {
+    filter: brightness(1);
+}
+
+#li-img {
+    width: 10%;
+    position: fixed;
+    margin-top: 12.5%;
+    margin-left: 67%;
+    filter: brightness(0.7);
+    transition: 200ms ease;
+    animation: fade-logos-row 1.5s;
+}
+
+#li-img:hover {
+    filter: brightness(1);
+}
+
+#mail-img {
+    width: 10%;
+    position: fixed;
+    margin-top: 12.5%;
+    margin-left: 46.5%;
+    filter: brightness(0.7);
+    transition: 200ms ease;
+    animation: fade-logos-row 1.5s;
+}
+
+#mail-img:hover {
+    filter: brightness(1);
+}

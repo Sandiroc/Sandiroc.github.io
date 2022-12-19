@@ -134,7 +134,7 @@ nav ul li a:hover::after {
 
 .about-header-text h1 {
     font-size: 40px;
-    margin-top: 15%;
+    margin-top: 10%;
     animation: fade-inNout 1.5s;
 }
 
@@ -149,10 +149,10 @@ nav ul li a:hover::after {
 }
 
 #abt-logo-img {
-    position:static;
+    position:relative;
     width:30%;
     margin-left: 55%;
-    margin-top: -25%;
+    margin-top: -20%;
     animation: fade-image 1.5s;
 }
 

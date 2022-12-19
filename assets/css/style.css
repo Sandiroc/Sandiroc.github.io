@@ -100,6 +100,7 @@ nav ul li a:hover::after {
     margin-left: 15%;
     margin-top: 13%;
     font-size: 20px;
+    text-shadow: 3px 3px black;
 }
 
 .main-header-text h1 {
@@ -128,6 +129,7 @@ nav ul li a:hover::after {
     margin-left: 8%;
     margin-top: 5%;
     font-size: 20px;
+    text-shadow: 3px 3px black;
 }
 
 .about-header-text h1 {
@@ -155,40 +157,40 @@ nav ul li a:hover::after {
 }
 
 /* ----------------------Skills-------------------- */
-.default-text {
-    color: white;
-    width:35%;
+.default-title {
+    color: #a816ab;
     font-size:25px;
     position:fixed;
     margin-top: 10%;
-    margin-left: 15%;
+    margin-left: 10%;
     animation: fade-inNout 1.5s;
-}
-
-.default-text h1{
-    color: #a816ab
-}
-
-.default-text p {
-    margin-top: 2%;
-    font-size: 25px;
-}
-
-.print-statements {
-    font-size: 20px;
-    color: white;
-    margin-top: -8%;
-    margin-left: 15%;
-    width: 35%;
-    position: absolute;
     text-shadow: 3px 3px black;
 }
 
-.print-statements p {
-    margin-top: 1%;
+#skill-name {
+    color: #a816ab;
+    font-size:30px;
+    position:fixed;
+    margin-top: 13%;
+    font-weight: bold;
+    margin-left: 10%;
+    animation: fade-inNout 1.5s;
+    text-shadow: 3px 3px black;
+}
+
+#skill-description {
+    color: white;
+    margin-left: 10%;
+    margin-top: 16%;
+    position: absolute;
+    font-size: 25px;
+    width: 35%;
+    animation: fade-inNout 1.5s;
+    text-shadow: 3px 3px black;
 }
 
 .skills-row-1 img{
+    position: relative;
     width:200px;
     background-color:white;
     padding: 0.5%;

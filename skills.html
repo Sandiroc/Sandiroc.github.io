@@ -13,7 +13,7 @@
 
     <link rel="icon" type="image/ico" sizes="32x32" href="assets/images/favicon.ico" />
 
-    <title> About | Sandilya Bhamidipati </title>
+    <title> Skills | Sandilya Bhamidipati </title>
 </head>
 
 <body>
@@ -39,112 +39,57 @@
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
         </nav>
-        <div class="default-text">
-            <h1>Skills</h1>
-            <p>Here are some technologies that I'm confident in.
-            </p>
-
+        <div class="default-title">
+            <h1 id="skill-title">Skills:</h1>
+        </div>
+        <div id="skill-name">
+            Hover over the icons to the right!
+        </div>
+        <div id="skill-description">
+            Here are some technologies that I'm confident in.
         </div>
 
         <div class="skills-row-1" id="text">
             <img src="assets/images/skills_images/java_logo.png" 
             class="skill-row1"
+            li onmouseover="hover('Java'); hover1('I am proficient in building applications in Java that range from class projects to video games. Some examples include resource/finance manager tools for various video games and top-down RPGs with personally designed mechanics and character models.');"
             id="java-logo-img" />
             <img src="assets/images/skills_images/python_logo.png" 
             class="skill-row1"
+            li onmouseover="hover('Python'); hover1('I have used Python to script and calculate formulas in my design team, in conjuction with MatLab. I have also used Python to build quality of life applets using packages such as Kivy and statistical analysis tools using packages such as Scikit.')"
             id="py-logo-img" />
             <img src="assets/images/skills_images/C_logo.png" 
             class="skill-row1"
+            li onmouseover="hover('C'); hover1('I have used C to study parallel computation, parallel programming paradigms, and computer architecture/systems.');"
             id="C-logo-img" />
         </div>
         <div class="skills-row-2" id="text">
             <img src="assets/images/skills_images/R_logo.png" 
             class="skill-row2"
+            li onmouseover="hover('R'); hover1('I have used R to conduct hypothesis testing, multivariate analysis, and regression modeling. I have also used dataframes built with R and other functions in tandem with Python to build my statistical analysis tool, PyStrappR.');"
             id ="R-logo-img"/>
             <img src="assets/images/skills_images/js_logo.png" 
             class="skill-row2"
+            li onmouseover="hover('JavaScript'); hover1('I have experience in using JavaScript to build websites with functional designs and professional user interfaces. ');"
             id ="js-logo-img"/>
-            <img src="assets/images/skills_images/html_logo.png"
+            <img src="assets/images/skills_images/Matlab_Logo.png"
             class="skill-row2" 
+            li onmouseover="hover('MatLab'); hover1('I am proficient in MatLab, MatLab Simulink, and MatLab Simscape with pseudo-industry experience. I have used MatLab as a tool to analyze electric vehicle plant models and conduct model-in-loop testing, software-in-loop testing, and hardware-in-loop testing as part of a vehicle design team.');"
             id ="html-logo-img"/>
         </div>
 
-        <div class="print-statements">
-            <p>
-                <span class="java-type"></span>
-            </p>
-
-            <p>
-                <span class="py-type"></span>
-            </p>
-
-            <p>
-                <span class="C-type"></span>
-            </p>
-
-            <p>
-                <span class="R-type"></span>
-            </p>
-
-            <p>
-                <span class="js-type"></span>
-            </p>
-
-            <p>
-                <span class="html-type"></span>
-            </p>
-        </div>
-
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-        <script>
-            var typed = new Typed(".java-type", {
-                strings: ["System.out.println('Hello World');"],
-                typeSpeed: 40,
-                showCursor: false,
-                loop: false,
-
-            });
-
-            typed = new Typed(".py-type", {
-                strings: ["print('Hello World')"],
-                typeSpeed: 40,
-                showCursor: false,
-                loop: false,
-
-            });
-
-            typed = new Typed(".C-type", {
-                strings: ["printf('Hello World');"],
-                typeSpeed: 40,
-                showCursor: false,
-                loop: false,
-
-            });
-
-            typed = new Typed(".R-type", {
-                strings: ["print('Hello World')"],
-                typeSpeed: 40,
-                showCursor: false,
-                loop: false,
-
-            });
-
-            typed = new Typed(".js-type", {
-                strings: ["console.log('Hello World')"],
-                typeSpeed: 40,
-                showCursor: false,
-                loop: false,
-
-            });
-
-            typed = new Typed(".html-type", {
-                strings: ["<p> Hello World </p>"],
-                typeSpeed: 40,
-                showCursor: false,
-                loop: false,
-
-            });
-        </script>
+        
     </div>
+    
+    <script>
+        function hover(description) {
+            console.log(description);
+            document.getElementById("skill-name").innerHTML = description;
+        }
+
+        function hover1(description) {
+            console.log(description);
+            document.getElementById("skill-description").innerHTML = description;
+        }
+    </script>
 </body>

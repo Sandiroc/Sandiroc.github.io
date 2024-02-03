@@ -15,7 +15,8 @@ body {
     align-items: center;
     min-height: 100vh;
     background: #7d2ae8;
-    background-image: url("img/background.jpg")
+    background-image: url("img/background.jpg");
+    background-size: cover
 }
 .wrapper {
     position: relative;

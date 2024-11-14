@@ -152,7 +152,7 @@ nav ul li a:hover::after {
     position:relative;
     width:30%;
     margin-left: 55%;
-    margin-top: -20%;
+    margin-top: -25%;
     animation: fade-image 1.5s;
 }
 

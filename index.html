@@ -6,80 +6,174 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/home.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&display=swap" rel="stylesheet">
-
-    <link
-    rel="icon"
-    type="image/ico"
-    sizes="32x32"
-    href="assets/images/favicon.ico"
-  />
+    <link rel="icon" type="image/ico" sizes="32x32" href="assets/images/favicon.ico">
 
     <title> Home | Sandilya Bhamidipati </title>
 </head>
 
 <body>
-    <style>
-        body {
-            background-image: url("assets/images/gif_bg.gif");
-            background-size: cover;
-            background-attachment: fixed;
-        }
-    </style>
-    <div id="Taskbar">
+    <div id="Taskbar"></div>
 
-    </div>
-        <div class="container">
-            <nav>
-                <a href="index.html" class="nav-link">
-                    <img src="assets/images/SB_logo.png" class="logo">
-                </a>
-                <ul class="navigation">
-                    <li><a href="about.html" class="nav-link">About</a></li>
-                    <li><a href="projects.html" class="nav-link">Projects</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
-                </ul>
-            </nav>
+    <div class="container">
+        <nav>
+            <a href="#" class="nav-link">
+                <img src="assets/images/home_icon.png" class="logo" alt="Logo">
+            </a>
+            <ul class="navigation">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
 
-            <div class="main-header-text">
-                <p><span class="auto-type1"></span></p>
-                <p><span class="auto-type2"></span></p>
-                <p><span class="auto-type3"></span></p>
-
-                <h1>I'm <span class="colored">Sandilya</span>, 
-                    let's <span class="colored">B</span>uild something!</h1>
-
-            </div>
-
-            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-            <script>
-                var typed = new Typed(".auto-type1", {
-                    strings: ["Researcher"],
-                    typeSpeed: 60,
-                    showCursor: false,
-                    loop: false,
-
-                });
-                typed = new Typed(".auto-type2", {
-                    strings: ["Data Scientist"],
-                    typeSpeed: 60,
-                    showCursor: false,
-                    loop: false,
-
-                });
-                typed = new Typed(".auto-type3", {
-                    strings: ["Comic Book Enthusiast"],
-                    typeSpeed: 60,
-                    showCursor: false,
-                    loop: false,
-
-                });
-            </script>
+        <div id="home" class="main-header-text">
+            <p><span class="auto-type1"></span></p>
+            <p><span class="auto-type2"></span></p>
+            <p><span class="auto-type3"></span></p>
+            <h1>I'm <span class="colored">Sandilya</span>, let's <span class="colored">B</span>uild something!</h1>
         </div>
+        <div class="arrow-container">
+            <a href="#about" class="arrow-link">
+                <img src="assets/images/drop-down_icon.png" alt="Down Arrow" class="arrow">
+                
+            </a>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+        <script>
+            const options = {
+                typeSpeed: 60,
+                showCursor: false,
+                loop: false
+            };
+
+            new Typed(".auto-type1", { strings: ["Data Scientist"], ...options });
+            new Typed(".auto-type2", { strings: ["Bioinformatician"], ...options });
+            new Typed(".auto-type3", { strings: ["Comic Book Enthusiast"], ...options });
+        </script>
     </div>
+
+    <section id="about" class="about-section">
+        <div class="about-header-text">
+            <h2 class="about-title">About</h2>
+            <br></br>
+            <br></br>
+            <div class="about-content">
+                <div class="about-item">
+                    <p class="about-text">
+                        Hey there! I’m a graduate student studying bioinformatics at Boston University, combining my background in computer science and 
+                        data science with my passion for biological research. I've been a research assistant, hackathon organizer, 
+                        machine learning specialist, and I'm currently a software engineer. My work often involves creating machine learning models 
+                        to analyze metabolic & agricultural datasets or designing tools that make complex data manageable & human-readable.
+                    </p>
+                    <img src="assets/images/SB_logo.png" class="image-item" alt="Image 1">
+                </div>
+    
+                <div class="about-item">
+                    <img src="assets/images/about_images/abt_img2.png" class="image-item" alt="Image 2">
+                    <p class="about-text">
+                        I enjoy working on projects that require a mix of technical precision and creative thinking, whether it’s 
+                        automating workflows, building compelling web interfaces, or deploying scalable applications on platforms like AWS.
+                        I'm currently working at ADViRNA to virtualize and convert their in-house software to a scalable SaaS platform.
+                    </p>
+                    
+                </div>
+    
+                <div class="about-item">
+                    <p class="about-text">
+                        When I’m not working, you’ll probably find me experimenting with side projects, designing 
+                        8-bit games, improving my web development skills, or reading. I’m always open to new ideas and 
+                        collaborations, so feel free to reach out if something sparks your interest!
+                    </p>
+                    <img src="assets/images/about_images/abt_img3.png" class="image-item" alt="Image 3">
+                </div>
+            </div>
+        </div>
+        <div class="arrow-container">
+            <a href="#projects" class="arrow-link">
+                <img src="assets/images/drop-down_icon.png" alt="Down Arrow" class="arrow">
+            </a>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="projects-header-text">
+            <h2 class="projects-title">Projects</h2>
+            <br></br>
+            <br></br>
+
+            <div class="projects-content">
+                <!-- Repeat for each project -->
+                <a href="https://github.com/your-repository-link" class="project-item" target="_blank">
+                    <img src="assets/images/projects_images/deepfold_img.png" alt="Project 1" class="project-image">
+                    <div class="project-name">Predicting Secondary Structure of Human rRNA</div>
+                </a>
+
+                <a href="https://github.com/Sandiroc/ForecastingHABs_VERA_Challenge" class="project-item" target="_blank">
+                    <img src="assets/images/projects_images/habs_img.jpg" alt="Project 2" class="project-image">
+                    <div class="project-name">Forecasting Harmful Algal Blooms</div>
+                </a>
+
+                <a href="https://github.com/edisonrhuang/Pipeline" class="project-item" target="_blank">
+                    <img src="assets/images/projects_images/pipeline_img.png" alt="Project 3" class="project-image">
+                    <div class="project-name">Pipeline</div>
+                </a>
+            </div>
+        </div>
+        <div class="arrow-container">
+            <a href="#contact" class="arrow-link">
+                <img src="assets/images/drop-down_icon.png" alt="Down Arrow" class="arrow">
+            </a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-header-text">
+            <h2 class="contact-title"><span class="auto-type4"></span></h2>
+            <br></br>
+            <br></br>
+            <br></br>
+            <div class="contact-content">
+                <div class="contact-item">
+                </div>
+                <div id="images" class="contact-icons">
+                    <a href="https://github.com/Sandiroc" target="_blank">
+                        <img src="assets/images/github_icon.png" id="git-img" alt="GitHub">
+                    </a>
+    
+                    <a href="mailto:bsandilya1908@gmail.com">
+                        <img src="assets/images/email_logo.png" id="mail-img" alt="Email">
+                    </a>
+    
+                    <a href="https://www.linkedin.com/in/bsandilya/" target="_blank">
+                        <img src="assets/images/linkedin_icon.png" id="li-img" alt="LinkedIn">
+                    </a>
+                </div>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+            </div>
+        </div>
+        
+
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+          var typed = new Typed(".auto-type4", {
+              strings: ["Find me here"],
+              typeSpeed: 80,
+              showCursor: true,
+              loop: false,
+  
+          });
+      </script>
+    </section>
+    
 </body>
 
+</html>
